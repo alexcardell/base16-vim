@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Snazzy scheme by Chawye Hsu (https://github.com/h404bi) based on Hyper Snazzy Theme (https://github.com/sindresorhus/hyper-snazzy)
+" Snazzy scheme by Chawye Hsu (https://github.com/chawyehsu) based on Hyper Snazzy Theme (https://github.com/sindresorhus/hyper-snazzy)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -331,6 +331,12 @@ call <sid>hi("jsGlobalObjects",     s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("jsGlobalNodeObjects", s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("jsExceptions",        s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("jsBuiltins",          s:gui0A, "", s:cterm0A, "", "", "")
+
+" LSP highlighting
+call <sid>hi("LspDiagnosticsDefaultError", s:gui08, "", s:cterm08, "", "", "")
+call <sid>hi("LspDiagnosticsDefaultWarning", s:gui09, "", s:cterm09, "", "", "")
+call <sid>hi("LspDiagnosticsDefaultHnformation", s:gui05, "", s:cterm05, "", "", "")
+call <sid>hi("LspDiagnosticsDefaultHint", s:gui03, "", s:cterm03, "", "", "")
 
 " Mail highlighting
 call <sid>hi("mailQuoted1",  s:gui0A, "", s:cterm0A, "", "", "")
